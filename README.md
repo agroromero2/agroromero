@@ -4,3 +4,4 @@
 - Duban Jose Romero Ramirez
 - Leidy Cristina Hurtado Velandia
 - Juan Camilo Araque Alvarez
+- Mayra Alejandra Riaño Quintero
