@@ -4,7 +4,7 @@ import Layout from './Componentes/Layout';
 import Home from './Componentes/Home';
 import About from "./Componentes/About";
 import Contact from './Componentes/Contact';
-import Lproductos from './Componentes/Lproductos';
+import Lproductos from './Componentes/Productos/Lproductos';
 import Mventas from './Componentes/Mventas';
 import Lventas from './Componentes/Lventas';
 import Carrito from './Componentes/Carrito';
