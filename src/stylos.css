@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+.body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    background-image: radial-gradient(#ffff 0.5px, transparent 0.5px);
+    background-size: 20px 20px;
+    background-position:0 0, 10px 10px;
+    display: flex;
+    min-height: 100vh;
+}
+.form{
+    background-color: #fff;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 0 5px 10px -5px rgb (0 0 0 /30%);
+    text-align: center;
+}
+.form_title{
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+
+.form_link{
+    font-weight: 400;
+    color: #000;
+}
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+.form_group{
+    position: relative;
+    --color: #5757577e;
+}
+.form_input{
+    width: 100%;
+    background: none ;
+    color:#706e6e ;
+    font-size: 1em;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.form_input:focus + .form_label ,
+.form_input:not(:placeholder-shown) + .form_label {
+    transform: translateY(-12px); scale: (.7);
+    transform-origin: left top;
+    color:#1152b3
+
+}
+.form_label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translate(10px);
+    transition: transform .5s, color .3s;
+
+}
+.form_submit{
+    background: #3866f2;
+    color: #EAEAEA;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: .8rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+.form_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #3866f2;
+    transform: scale(0);
+    transform: left bottom;
+    transition: 4s;
+}
+.form_input:focus ~ .form_line ,
+.form_input:not(:placeholder-shown) ~ .form_line {
+    transform: scale(1);
+}
+@media (max-width: 425px){
+    .form_title{
+    font-size: 1.8rem;
+    }
+}
+
+
+.body{
+    background: #ADA996;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.colorfondo{
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.presentacion{
+    font-family: 'Mina', sans-serif;
+   color:#fff;
+    background-image: linear-gradient(45deg,#060d44 0%,#1152b3 35%,#237019 85%,#0a3b12 100%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    color:#fff;
+    margin-left:40px;
+    }
+.color{
+    color: #eff0f8;
+}
+.logo{
+    width: 40%;
+}
+.logoi{
+    width: 15%;
+}
+
+/*------------Productos----*/
+
+
+/*------------Header----*/
+
+Header{
+    width: 95%;
+    min-height: 100px;
+    max-width: 1530px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    box-sizing: border-box;
+    background-color: rgb(242, 242, 246);
+    box-shadow: 0 5px 10px #190370a4 ;
+  }
+  .logoi{
+    width:60px;
+    border-radius: 50%;
+    justify-content: flex-start;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  a:hover{
+    color: #08a05c ;
+  }
+  li{
+    list-style:none;
+  }
+  header ul{
+    display: flex;
+    padding: 0;
+    margin:0;
+   
+  }
+  header ul li{
+    padding: 0 1rem;  
+    color: aliceblue;
+    
+  }
+  header ul li a{
+    font-weight: bold;
+  }
+  header .carrito{
+    position: relative;
+    cursor: pointer;
+  }header .carrito box-icon{
+    width: 40px;
+    height: 40px;
+  }
+  header .carrito span{
+    position: absolute;
+    top: -1.2rem;
+    right: -1.5rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    padding: 0rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: black;
+  }
+  
+  /*--------productos----*/
+  .title{
+    font-size: 2.34rem;
+    padding: 10rem 0 0 0;
+    color: rgb(2, 46, 28);  
+  }
+  .productos{ 
+    padding: 5rem 1rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem,1fr));
+    gap: 3rem 2rem;
+    box-sizing:border-box ;
+  }
+  
+  .producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 10px 10px 2px rgba(0, 0, 0, .2);
+    border: 6px solid transparent;
+    border-radius: 5px;
+  }
+  .producto:hover{
+    border: 6px solid #08a05c69;
+  }
+  .productos_img img{
+    width: 70px;/* <---- tamaño de la imagen del producto*/
+  }
+  .producto_footer{
+    padding:1em;  
+  }
+  .producto_footer h1{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .producto_footer p{
+    font-weight: 600;
+    color: rgb(0, 0,0 .555);
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+  
+  .producto_footer .price{
+    font-size: 2rem;
+    color: #1a202c;  
+  }
+  
+  .producto .button{
+  width: 100%;
+  height: 45%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem 2rem;
+  padding: 0 1rem;
+  margin: 1rem;
+  }
+  .button .btn {
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 5px;
+  
+  }
+  .button button{
+    background-color: #3033d3;
+    max-width: 180px;
+    width: 100%;
+    font-size: 1.3rem ;
+    color: white;
+    font-weight: 400;
+  
+  }
+  .button div {
+    background-color: green;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    margin-left: -2rem;
+    border-radius: 5px;
+  }
+  .button div a{
+    color: white;
+    font-weight: 500;
+  }
+  .box{
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 0 1rem #00000025 inset;
+  }
+  .grid-responsive{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  }
+  
+  /*------------media-----*/
+  
+  @media only screen and (max-width: 600px ){
+    header ul{
+    display: none;
+    }
+  }
+  

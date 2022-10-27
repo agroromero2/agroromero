@@ -11,6 +11,9 @@ function Menuo(toogleOpennew) {
       <Link to="/lProductos" className="p-4 text-black">
         Lista de Productos
       </Link>
+      <Link to="/Mproducto" className="p-4 text-black">
+        Modificar Productos
+      </Link>
       <Link to="/MVentas" className="p-4 text-black">
         Modificar Ventas
       </Link>

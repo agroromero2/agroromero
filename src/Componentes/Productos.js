@@ -2,7 +2,7 @@ import { useReducer } from "react"
 import { Types } from "../Acciones/AccionesProduct";
 import { productosReducer, product_inicial } from "../Reducers/productosReducer"
 import ProductosItem from "./ProductosItem";
-import CartItem from "./CartItem";
+//import CartItem from "./CartItem";
 
 const Productos = () => {
 
