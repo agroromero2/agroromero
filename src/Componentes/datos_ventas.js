@@ -3,7 +3,7 @@ export const listado_ventas = [
         id: 1,
         fecha: "01/09/2022",
         idVenta: 123,
-        Valor: 35,
+        Valor: 100,
         unidad: "$",
     },
     {

@@ -15,6 +15,9 @@ function Navbar({ toogleOpen }) {
             </div>
 
             <div className="pr-8 cursor-pointer hidden md:block">
+            <Link to="/Productos" className="p-4">
+                    Productos
+                </Link>
 
                 <Link to="/lProductos" className="p-4">
                     Lista de Productos
@@ -35,7 +38,14 @@ function Navbar({ toogleOpen }) {
 
 
                 </Link>
-
+{/*
+                <Link to="/Ingreso" className="p-4">
+                    Ingreso
+                </Link>
+                <Link to="/Registro" className="p-4">
+                    Registro
+                </Link>
+*/}
             </div>
         </nav>
     )
