@@ -5,11 +5,14 @@ import Home from './Componentes/Home';
 import About from "./Componentes/About";
 import Contact from './Componentes/Contact';
 import Lproductos from './Componentes/Productos/Lproductos';
+import LproductosAdmin from './Componentes/Productos/LproductosAdmin';
 import Mventas from './Componentes/Mventas';
-import Lventas from './Componentes/Lventas';
+import Lventas from './Componentes/Lista_Ventas/Lventas';
 import Carrito from './Componentes/Carrito';
 import Productos from './Componentes/Productos';
 import Mproducto from './Componentes/Mproducto';
+import IngresarProductosAdmin from './Componentes/Productos/IngresarProductosAdmin';
+import CancelarIngresoProducto from './Componentes/Productos/LproductosAdmin'
 
 function App() {
   return (
@@ -17,6 +20,12 @@ function App() {
       <Layout>
       <div>
         <Switch>
+	  <Route path="/IngresarProductosAdmin" >
+            <IngresarProductosAdmin />
+          </Route>
+          <Route path="/LproductosAdmin" >
+            <CancelarIngresoProducto />
+          </Route>
 
           <Route path="/about" >
             <About />
@@ -29,6 +38,9 @@ function App() {
           </Route>
           <Route path="/lProductos" >
             <Lproductos />
+          <Route path="/lProductosAdmin" >
+            <LproductosAdmin />
+          </Route>
           </Route>
           <Route path="/MProductos" >
             <Mproducto/>

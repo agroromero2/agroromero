@@ -1,37 +1,34 @@
+import { v4 as uuidv4} from 'uuid';
+
 export const listado_ventas = [
     {
-        id: 1,
+        id: uuidv4(),
         fecha: "01/09/2022",
         idVenta: 123,
         Valor: 100,
-        unidad: "$",
     },
     {
-        id: 2,
+        id: uuidv4(),
         fecha: "28/09/2022",
         idVenta: 234,
         Valor: 50,
-        unidad: "$",
     },
     {
-        id: 3,
+        id: uuidv4(),
         fecha: "29/09/2022",
         idVenta: 543,
         Valor: 10,
-        unidad: "$",
     },
     {
-        id: 4,
+        id: uuidv4(),
         fecha: "31/09/2022",
         idVenta: 700,
         Valor: 200,
-        unidad: "$",
     },
     {
-        id: 5,
+        id: uuidv4(),
         fecha: "31/09/2023",
         idVenta: 700,
         Valor: 200,
-        unidad: "$",
     },
 ];

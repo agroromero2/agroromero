@@ -22,6 +22,9 @@ function Navbar({ toogleOpen }) {
                 <Link to="/lProductos" className="p-4">
                     Lista de Productos
                 </Link>
+                <Link to="/lProductosAdmin" className="p-4">
+                    Lista de Productos Admin
+                </Link>
                 <Link to="/Mproducto" className="p-4 text-black">
                     Modificar Productos
                 </Link>
