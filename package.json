@@ -1,5 +1,5 @@
 {
-  "name": "aplicacion",
+  "name": "sprint2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -36,9 +36,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "install": "^0.13.0"
   }
 }

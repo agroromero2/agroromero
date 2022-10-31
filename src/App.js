@@ -1,57 +1,59 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route  } from 'react-router-dom';
-import Layout from './Componentes/Layout';
-import Home from './Componentes/Home';
-import About from "./Componentes/About";
-import Contact from './Componentes/Contact';
-import Lproductos from './Componentes/Productos/Lproductos';
-import Mventas from './Componentes/Mventas';
-import Lventas from './Componentes/Lventas';
-import Carrito from './Componentes/Carrito';
-import Productos from './Componentes/Productos';
-import Mproducto from './Componentes/Mproducto';
+import React, { useState } from 'react'
+import data from './Componentes/back/data/data'
+import Header from './Componentes/front/Header/Header';
+import Routes from './Componentes/front/Routes/Routes';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-function App() {
+
+const App = () => {
+  const { productosItems } = data;
+  const [carItems, setCarItems] = useState([]);
+
+
+  const handleAddProducto = (product) => {
+    const ProductoExiste = carItems.find((item) => item.id === product.id);
+    if (ProductoExiste) {
+      setCarItems(
+        carItems.map((item) =>
+          item.id === product.id
+            ? { ...ProductoExiste, quantity: ProductoExiste.quantity + 1 }
+            : item)
+      );
+    } else {
+      setCarItems([...carItems, { ...product, quantity: 1 }]);
+    }
+    console.log(product)
+  };
+
+  const handleEliminaProducto = (product) => {
+    const ProductoExiste = carItems.find((item) => item.id === product.id);
+    if (ProductoExiste.quantity === 1) {
+      setCarItems(carItems.filter((item) => item.id !== product.id));
+    } else {
+      setCarItems(
+        carItems.map((item) => item.id === product.id ? { ...ProductoExiste, quantity: ProductoExiste.quantity - 1 } : item)
+      );
+    }
+  };
+  const handleCartClearence=()=>{
+    setCarItems([]);
+  }
+
+
+
   return (
-    <Router>
-      <Layout>
-      <div>
-        <Switch>
-
-          <Route path="/about" >
-            <About />
-          </Route>
-          <Route path="/contacto" >
-            <Contact />
-          </Route>
-          <Route path="/Productos" >
-            <Productos />
-          </Route>
-          <Route path="/lProductos" >
-            <Lproductos />
-          </Route>
-          <Route path="/MProductos" >
-            <Mproducto/>
-          </Route>
-          <Route path="/mVentas" >
-            <Mventas />
-          </Route>
-          <Route path="/lVentas" >
-            <Lventas />
-          </Route>
-          <Route path="/Carrito" >
-            <Carrito/>
-          </Route>
-          <Route path="/" exact >
-            <Home />
-          </Route>
-        </Switch>
-      </div>
-      </Layout>
-    </Router>
+    <div>
+      <Router>
+        <Header carItems={carItems}/>
+        <Routes productosItems={productosItems} carItems={carItems} 
+        handleAddProducto={handleAddProducto}
+        handleEliminaProducto={handleEliminaProducto}
+        handleCartClearence={handleCartClearence}/>
+      </Router>
 
 
-  );
-};
+    </div>
+  )
+}
 
 export default App
