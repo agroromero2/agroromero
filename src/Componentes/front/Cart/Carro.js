@@ -1,5 +1,5 @@
 import React from 'react'
-import './carro.css'
+
 
 const Carro = ({ carItems, handleAddProducto, handleEliminaProducto, handleCartClearence}) => {
 

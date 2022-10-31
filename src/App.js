@@ -3,7 +3,10 @@ import data from './Componentes/back/data/data'
 import Header from './Componentes/front/Header/Header';
 import Routes from './Componentes/front/Routes/Routes';
 import { BrowserRouter as Router } from 'react-router-dom';
-
+import './stylos/Productos.css';
+import './stylos/carro.css';
+import './stylos/header.css';
+import './stylos/Ingreso.css';
 
 const App = () => {
   const { productosItems } = data;

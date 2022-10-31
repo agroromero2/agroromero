@@ -1,5 +1,4 @@
 import React from 'react'
-import './Ingreso.css'
 
 const Ingreso = () => {
   return (

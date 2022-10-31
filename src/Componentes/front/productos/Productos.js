@@ -1,5 +1,5 @@
 import React from 'react';
-import './Productos.css';
+
 
 const Productos = ({ productosItems, handleAddProducto }) => {
     return (
