@@ -25,6 +25,11 @@ const Header = ({carItems}) => {
                 </ul>
                 <ul>
                      <li>
+                         <Link to="/AdmonProductos">AdmonProductos</Link>
+                     </li>
+                </ul>
+                <ul>
+                     <li>
                          <Link to="/carro" className='cart'>
                             <i className='fas fa-shopping-cart'/>
                             <span className='cart-length'>

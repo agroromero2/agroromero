@@ -26,7 +26,7 @@ const VistaproductosAdmin = (producto) => {
                 </tbody>
             </table>
         </div>
-    );
+                    );
 }
 
 export default VistaproductosAdmin

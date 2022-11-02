@@ -34,6 +34,11 @@
     font-size: 15px;
     padding-bottom: 10px;
 }
+.productos-cantidad{
+    margin: 10px 10px;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
 .productos-precio{
     margin: 10px 10px;
     padding-bottom: 20px;
