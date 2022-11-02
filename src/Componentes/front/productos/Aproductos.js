@@ -1,6 +1,9 @@
 import React from "react";
 
-const Aproductos = ({ productosItems, AhandleEliminaProducto, AhandleEditProducto}) => {
+const Aproductos = ({ productosItems,
+  AhandleEliminaProducto, 
+  AhandleEditProducto
+  }) => {
   return (
     <div className="Fproductos">
       {productosItems.map((productosItem) => (
@@ -26,8 +29,8 @@ const Aproductos = ({ productosItems, AhandleEliminaProducto, AhandleEditProduct
             <div>
 
               
-              <button className="productos-add-car"
-              onClick={() => AhandleEditProducto(productosItem)}
+              <button className="productos-addi-car"
+             onClick={() => AhandleEditProducto(productosItem)}
               >Editar</button>
 
               <button className="productos-del-car"

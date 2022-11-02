@@ -12,11 +12,9 @@ const Carro = ({ carItems, handleAddProducto, handleEliminaProducto, handleCartC
           <button className='clear-cart-button' onClick={handleCartClearence}>Limpia Carro</button>
         )}
       </div>
-
       {carItems.length === 0 && (
       <div className='cart-item-empty'> No se han adicionado Items.</div>
       )}
-
       <div>
         {carItems.map((item) => (
        <div key={item.id} className='cart-item-list'>
@@ -32,19 +30,13 @@ const Carro = ({ carItems, handleAddProducto, handleEliminaProducto, handleCartC
           <div className="cart-item-precio">
             {item.quantity} * ${item.Precio}
           </div>
-     </div>
-
-
-                    
+     </div>                    
         ))}
-        
-
       </div>
             <div className='cart-item-total'>
               Valor Total
               <div className='cart-item-total-precios'>
-                ${TotalPrecio}
-              
+                ${TotalPrecio}              
               </div> 
             </div>
     </div>

@@ -39,7 +39,7 @@
     padding-bottom: 20px;
     font-size: 20px;
 }
-.productos-add-car{
+.productos-addi-car{
     font-weight: 700;
     font-size: 18px;
     border-radius: 5px;
@@ -54,7 +54,7 @@
     text-transform: uppercase;
     margin: 15px auto;
 }
-.productos-add-car:hover {
+.productos-addi-car:hover {
     background-color: violet;
 }
 

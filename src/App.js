@@ -15,7 +15,7 @@ import './stylos/Ingreso.css';
 const App = () => {
   const { productosItems} = data;
   const [carItems, setCarItems] = useState([]);
-  const [productosItem, setproductosItems] = useState([])
+  //const [productosItem, setproductosItems] = useState([])
 
 
   const handleAddProducto = (product) => {
@@ -65,8 +65,9 @@ const AhandleEliminaProducto = (id) => {
         handleAddProducto={handleAddProducto}
         handleEliminaProducto={handleEliminaProducto}
         handleCartClearence={handleCartClearence}
-        AhandleEditProducto ={AhandleEditProducto}
-        AhandleEliminaProducto={AhandleEliminaProducto}/>
+       AhandleEditProducto ={AhandleEditProducto}
+       AhandleEliminaProducto={AhandleEliminaProducto}
+       />
       </Router>
     </div>
   )

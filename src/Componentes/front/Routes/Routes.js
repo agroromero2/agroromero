@@ -4,13 +4,14 @@ import { Route, Switch } from 'react-router-dom';
 import Ingreso from '../Ingreso/Ingreso';
 import Carro from '../Cart/Carro';
 import Aproductos from '../productos/Aproductos';
-
-
-
-
-
-
-const Routes = ({ productosItems, carItems, handleAddProducto, handleEliminaProducto,handleCartClearence,AhandleEliminaProducto,AhandleEditProducto}) => {
+const Routes = ({ productosItems,
+  carItems,
+  handleAddProducto,
+  handleEliminaProducto,
+  handleCartClearence,
+  AhandleEliminaProducto,
+  AhandleEditProducto
+}) => {
   return (
     <div>
       <Switch>
@@ -18,7 +19,6 @@ const Routes = ({ productosItems, carItems, handleAddProducto, handleEliminaProd
           <Productos productosItems={productosItems} handleAddProducto={handleAddProducto} />
         </Route>
         <Route path="/Ingreso" exact>
-
           <Ingreso />
         </Route>
         <Route path="/Carro" exact>
@@ -26,22 +26,18 @@ const Routes = ({ productosItems, carItems, handleAddProducto, handleEliminaProd
             carItems={carItems}
             handleAddProducto={handleAddProducto}
             handleEliminaProducto={handleEliminaProducto}
-            handleCartClearence={handleCartClearence}    
+            handleCartClearence={handleCartClearence}
           />
         </Route>
 
         <Route path="/AdmonProductos" exact>
-        <Aproductos 
-        productosItems={productosItems}
-        AhandleEditProducto ={AhandleEditProducto}
-        AhandleEliminaProducto={AhandleEliminaProducto}
-        
-        />
+          <Aproductos
+            productosItems={productosItems}
+           AhandleEditProducto ={AhandleEditProducto}
+          AhandleEliminaProducto={AhandleEliminaProducto}
 
+          />
         </Route>
-
-        
-
       </Switch>
     </div>
   )
