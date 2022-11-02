@@ -4,13 +4,18 @@ import Header from './Componentes/front/Header/Header';
 import Routes from './Componentes/front/Routes/Routes';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './stylos/Productos.css';
+import './stylos/Aproductos.css';
 import './stylos/carro.css';
 import './stylos/header.css';
 import './stylos/Ingreso.css';
 
+
+
+
 const App = () => {
-  const { productosItems } = data;
+  const { productosItems} = data;
   const [carItems, setCarItems] = useState([]);
+  const [productosItem, setproductosItems] = useState([])
 
 
   const handleAddProducto = (product) => {
@@ -42,7 +47,15 @@ const App = () => {
     setCarItems([]);
   }
 
+//Aproducto
 
+const AhandleEditProducto = () => {
+  setCarItems([]);
+}
+
+const AhandleEliminaProducto = (id) => {
+ console.log(id.nombre)
+}
 
   return (
     <div>
@@ -51,10 +64,10 @@ const App = () => {
         <Routes productosItems={productosItems} carItems={carItems} 
         handleAddProducto={handleAddProducto}
         handleEliminaProducto={handleEliminaProducto}
-        handleCartClearence={handleCartClearence}/>
+        handleCartClearence={handleCartClearence}
+        AhandleEditProducto ={AhandleEditProducto}
+        AhandleEliminaProducto={AhandleEliminaProducto}/>
       </Router>
-
-
     </div>
   )
 }
