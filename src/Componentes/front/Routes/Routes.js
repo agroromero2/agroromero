@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom';
 import Ingreso from '../Ingreso/Ingreso';
 import Carro from '../Cart/Carro';
 import Aproductos from '../productos/Aproductos';
+import Listaventas from '../Lista_Ventas/Lventas';
 const Routes = ({ productosItems,
   carItems,
   handleAddProducto,
@@ -37,6 +38,9 @@ const Routes = ({ productosItems,
           AhandleEliminaProducto={AhandleEliminaProducto}
 
           />
+        </Route>
+		<Route path="/ListaVentas" exact>
+            <Listaventas />
         </Route>
       </Switch>
     </div>

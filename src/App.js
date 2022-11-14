@@ -8,6 +8,7 @@ import './stylos/Aproductos.css';
 import './stylos/carro.css';
 import './stylos/header.css';
 import './stylos/Ingreso.css';
+import './stylos/Lventas.css';
 
 
 
