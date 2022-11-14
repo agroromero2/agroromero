@@ -28,6 +28,11 @@ const Header = ({carItems}) => {
                          <Link to="/AdmonProductos">AdmonProductos</Link>
                      </li>
                 </ul>
+				<ul>
+                     <li>
+                         <Link to="/ListaVentas">ListaVentas</Link>
+                     </li>
+                </ul>
                 <ul>
                      <li>
                          <Link to="/carro" className='cart'>
